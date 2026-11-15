@@ -1,96 +1,148 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Favourite Books and Recipe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books & Recipe | Megha Patidar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>My Favourite Books and Recipe</h1>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="books-recipe.html">Books & Recipe</a> |
-        <a href="places.html">Favourite Places</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="timetable.html">Study Timetable</a> |
-        <a href="marks.html">Marks Table</a>
+<header class="page-hero">
+    <nav class="navbar">
+        <a class="logo" href="index.html">Megha<span>.</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="books-recipe.html">Books & Recipe</a>
+            <a href="places.html">Places</a>
+            <a href="blog.html">Blog</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="marks.html">Marks</a>
+        </div>
     </nav>
-    <hr>
+
+    <div class="page-heading">
+        <p class="eyebrow">A LITTLE ABOUT MY INTERESTS</p>
+        <h1>Books & <span>Recipes</span></h1>
+        <p>Stories that touch my heart and flavours that make my day.</p>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <section>
-        <h2>My Favourite Books</h2>
+    <section class="section">
+        <p class="eyebrow">MY BOOKSHELF</p>
+        <h2>Favourite Books 📚</h2>
 
-        <article>
-            <h3>The Kite Runner</h3>
-            <p><strong>Author:</strong> Khaled Hosseini</p>
+        <div class="book-grid">
 
-            <img src="kite runner.jpeg"
-                 alt="The Kite Runner book cover"
-                 width="200">
+            <article class="book-card">
+                <img class="book-cover"
+                     src="kite runner.jpeg"
+                     alt="The Kite Runner book cover">
 
-            <p>This novel explores friendship, choices, guilt, and redemption. It is one of my favourite books because of its emotional storytelling.</p>
-        </article>
+                <div class="book-info">
+                    <span class="book-tag">Favourite Read</span>
+                    <h3>The Kite Runner</h3>
+                    <p class="author">By Khaled Hosseini</p>
+                    <p>
+                        This novel explores friendship, choices,
+                        guilt, and redemption. It is one of my
+                        favourite books because of its emotional
+                        storytelling.
+                    </p>
+                </div>
+            </article>
 
-        <article>
-            <h3>A Thousand Splendid Suns</h3>
-            <p><strong>Author:</strong>Khaled Hosseini</p>
+            <article class="book-card">
+                <img class="book-cover"
+                     src="thousand splendid suns.jpg"
+                     alt="A Thousand Splendid Suns book cover">
 
-            <img src="thousand splendid suns.jpg"
-                 alt="A Thousand Splendid Suns book cover"
-                 width="200">
+                <div class="book-info">
+                    <span class="book-tag pink-tag">Beautiful Story</span>
+                    <h3>A Thousand Splendid Suns</h3>
+                    <p class="author">By Khaled Hosseini</p>
+                    <p>
+                        This book explains how small habits
+                        and consistent efforts can bring
+                        positive changes in our lives.
+                    </p>
+                </div>
+            </article>
 
-            <p>This book explains how small habits and consistent efforts can bring positive changes in our lives.</p>
-        </article>
-
+        </div>
     </section>
- <hr> <hr> 
-    <section>
-        <h2>My Favourite Recipe: Poha</h2>
 
-        <img src="poha.png"
-             alt="Indian breakfast"
-             width="300">
+    <section class="section recipe-section">
+        <p class="eyebrow">A TASTE OF HOME</p>
+        <h2>My Favourite Recipe 🍋</h2>
 
-        <h3>Ingredients</h3>
+        <div class="recipe-card">
 
-        <ul>
-            <li>2 cups poha</li>
-            <li>1 onion, chopped</li>
-            <li>1 green chilli</li>
-            <li>Mustard seeds</li>
-            <li>Peanuts</li>
-            <li>Curry leaves</li>
-            <li>Turmeric powder</li>
-            <li>Salt</li>
-            <li>Oil</li>
-            <li>Lemon juice</li>
-            <li>Fresh coriander</li>
-        </ul>
+            <div class="recipe-photo">
+                <img src="poha.png" alt="Indian breakfast Poha">
+                <div class="photo-caption">Simple • Delicious • Homemade</div>
+            </div>
 
-        <h3>Preparation Steps</h3>
+            <div class="recipe-content">
+                <h3>Delicious Poha</h3>
+                <p>
+                    A light, tasty and comforting Indian
+                    breakfast made with flattened rice.
+                </p>
 
-        <ol>
-            <li>Wash the poha gently and keep it aside.</li>
-            <li>Heat oil in a pan.</li>
-            <li>Add mustard seeds, peanuts, and curry leaves.</li>
-            <li>Add chopped onion and green chilli.</li>
-            <li>Add turmeric powder and salt.</li>
-            <li>Add the softened poha and mix gently.</li>
-            <li>Cook for a few minutes.</li>
-            <li>Add lemon juice and coriander.</li>
-            <li>Serve hot.</li>
-        </ol>
+                <div class="recipe-details">
+                    <span>🥣 Easy to make</span>
+                    <span>🌿 Fresh ingredients</span>
+                </div>
+            </div>
 
+            <div class="recipe-columns">
+
+                <div class="recipe-list">
+                    <h3>🥗 Ingredients</h3>
+                    <ul>
+                        <li>2 cups poha</li>
+                        <li>1 onion, chopped</li>
+                        <li>1 green chilli</li>
+                        <li>Mustard seeds</li>
+                        <li>Peanuts</li>
+                        <li>Curry leaves</li>
+                        <li>Turmeric powder</li>
+                        <li>Salt</li>
+                        <li>Oil</li>
+                        <li>Lemon juice</li>
+                        <li>Fresh coriander</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-list steps-list">
+                    <h3>👩‍🍳 Preparation Steps</h3>
+                    <ol>
+                        <li>Wash the poha gently and keep it aside.</li>
+                        <li>Heat oil in a pan.</li>
+                        <li>Add mustard seeds, peanuts, and curry leaves.</li>
+                        <li>Add chopped onion and green chilli.</li>
+                        <li>Add turmeric powder and salt.</li>
+                        <li>Add the softened poha and mix gently.</li>
+                        <li>Cook for a few minutes.</li>
+                        <li>Add lemon juice and coriander.</li>
+                        <li>Serve hot.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 </main>
 
 <footer>
-    <hr>
-    <p>&copy; 2026 Megha Patidar</p>
+    <p>© 2026 Megha Patidar</p>
+    <p>Made with love, stories & creativity ♡</p>
 </footer>
 
 </body>
