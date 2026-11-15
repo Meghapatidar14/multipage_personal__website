@@ -894,3 +894,193 @@ footer {
         font-size: 22px;
     }
 }
+
+
+/* ACADEMIC MARKS PAGE */
+
+.marks-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.marks-stat {
+    padding: 23px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#eee5ff,#f8f1ff);
+    border: 1px solid white;
+    box-shadow: 0 7px 20px rgba(130,100,160,.07);
+}
+
+.pink-stat {
+    background: linear-gradient(135deg,#ffe3eb,#fff1f3);
+}
+
+.mint-stat {
+    background: linear-gradient(135deg,#e0f5e9,#effbf4);
+}
+
+.marks-stat span {
+    color: #81758e;
+    font-size: 12px;
+}
+
+.marks-stat h3 {
+    font-size: 30px;
+    color: #51436e;
+    margin-top: 7px;
+}
+
+.marks-stat h3 small {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.marks-card,
+.performance-card {
+    padding: 25px;
+    background: rgba(255,255,255,.76);
+    border: 1px solid white;
+    border-radius: 23px;
+    box-shadow: 0 9px 28px rgba(130,100,160,.08);
+}
+
+.marks-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.marks-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    color: #51436e;
+}
+
+.marks-table-scroll {
+    overflow-x: auto;
+}
+
+.marks-table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    text-align: center;
+}
+
+.marks-table th,
+.marks-table td {
+    padding: 15px 12px;
+    font-size: 13px;
+}
+
+.marks-table thead th {
+    background: linear-gradient(110deg,#eee5ff,#ffe5ec,#e4f5eb);
+    color: #625575;
+}
+
+.marks-table tbody th {
+    text-align: left;
+    background: #f8f3ff;
+    color: #65547e;
+    border-radius: 10px 0 0 10px;
+}
+
+.marks-table tbody td {
+    background: #fffafd;
+    color: #6d6878;
+}
+
+.marks-table tfoot th,
+.marks-table tfoot td {
+    background: #e8f5ed;
+    color: #527d65;
+    font-weight: 700;
+}
+
+.grade {
+    display: inline-block;
+    min-width: 38px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.grade-a {
+    background: #e8e1ff;
+    color: #8169ba;
+}
+
+.grade-aplus {
+    background: #dff4e8;
+    color: #53866a;
+}
+
+.performance-card {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.performance-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #625575;
+    font-size: 13px;
+}
+
+.performance-label strong {
+    color: #8067bc;
+}
+
+.progress-track {
+    height: 12px;
+    background: #f0edf4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.lavender-fill {
+    background: linear-gradient(90deg,#b49be9,#8973d0);
+}
+
+.pink-fill {
+    background: linear-gradient(90deg,#f7bdce,#e99bb4);
+}
+
+.mint-fill {
+    background: linear-gradient(90deg,#bcebd2,#81c9a5);
+}
+
+.blue-fill {
+    background: linear-gradient(90deg,#b9dcf8,#80b8e5);
+}
+
+.peach-fill {
+    background: linear-gradient(90deg,#f8d4ad,#e9b47e);
+}
+
+@media(max-width:650px) {
+    .marks-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .marks-stat {
+        padding: 17px 22px;
+    }
+
+    .marks-card,
+    .performance-card {
+        padding: 17px;
+    }
+}
