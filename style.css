@@ -749,3 +749,148 @@ footer {
         flex-direction: column;
     }
 }
+
+
+/* STUDY TIMETABLE PAGE */
+
+.timetable-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(255,255,255,.76);
+    border: 1px solid white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(130,100,160,.09);
+}
+
+.table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.table-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #947ec4;
+    font-weight: 700;
+}
+
+.table-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #51436e;
+}
+
+.table-icon {
+    font-size: 32px;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 15px;
+}
+
+.study-table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    text-align: center;
+}
+
+.study-table caption {
+    padding: 12px;
+    color: #8a75b8;
+    font-weight: 600;
+}
+
+.study-table th,
+.study-table td {
+    padding: 15px 10px;
+    font-size: 12px;
+}
+
+.study-table thead th {
+    background: linear-gradient(110deg,#eee5ff,#ffe5ec,#e4f5eb);
+    color: #625575;
+    font-weight: 700;
+}
+
+.study-table tbody th {
+    background: #f0eaff;
+    color: #765fae;
+    border-radius: 10px 0 0 10px;
+    white-space: nowrap;
+}
+
+.study-table tbody td {
+    background: #fffafd;
+}
+
+.study-table tbody tr:hover td,
+.study-table tbody tr:hover th {
+    background-color: #faf3ff;
+}
+
+.subject {
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.lavender {
+    background: #eee6ff;
+    color: #8068b8;
+}
+
+.pink {
+    background: #ffe5ec;
+    color: #bd718c;
+}
+
+.mint {
+    background: #e0f5e9;
+    color: #548b70;
+}
+
+.blue {
+    background: #e2f1ff;
+    color: #6389b3;
+}
+
+.peach {
+    background: #fff0df;
+    color: #b08051;
+}
+
+.sunday {
+    background: linear-gradient(100deg,#eee5ff,#ffe4ec,#e1f5eb);
+    color: #75608e;
+}
+
+.sunday-row th {
+    background: #e8f5ed !important;
+    color: #55876c !important;
+}
+
+.table-note {
+    text-align: center;
+    color: #947db8;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+@media(max-width:650px) {
+    .timetable-card {
+        padding: 15px;
+    }
+
+    .table-heading h3 {
+        font-size: 22px;
+    }
+}
