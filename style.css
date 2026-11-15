@@ -474,3 +474,132 @@ footer {
         padding-top: 45px;
     }
 }
+
+
+/* FAVOURITE PLACES PAGE */
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.place-card {
+    background: rgba(255,255,255,.72);
+    border: 1px solid white;
+    border-radius: 23px;
+    overflow: hidden;
+    box-shadow: 0 9px 28px rgba(130,100,160,.09);
+    transition: .3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(130,100,160,.16);
+}
+
+.place-image {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg,#eee4ff,#ffe3e9,#e2f6ec);
+}
+
+.place-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.place-card:hover .place-image img {
+    transform: scale(1.06);
+}
+
+.place-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255,255,255,.85);
+    color: #816bc0;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.place-info {
+    padding: 23px;
+}
+
+.place-tag {
+    display: inline-block;
+    background: #eee7ff;
+    color: #8067bc;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.pink-place-tag {
+    background: #ffe6ec;
+    color: #c07891;
+}
+
+.mint-place-tag {
+    background: #e1f5eb;
+    color: #538e76;
+}
+
+.place-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin: 13px 0 2px;
+    color: #393044;
+}
+
+.place-location {
+    color: #9b83c8;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.place-info > p:last-child {
+    color: #777083;
+    font-size: 13px;
+}
+
+.travel-note {
+    margin: 45px 0;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(120deg,
+        #eee5ff, #ffe3e9, #e2f6ec, #e2f1ff);
+    border: 1px solid white;
+}
+
+.travel-note h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(23px, 4vw, 34px);
+    color: #51436e;
+    margin: 10px 0;
+}
+
+.travel-note > p:last-child {
+    color: #777083;
+    font-size: 14px;
+}
+
+@media(max-width:650px) {
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .place-image {
+        height: 240px;
+    }
+}
