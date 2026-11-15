@@ -268,3 +268,209 @@ footer {
         padding: 25px;
     }
 }
+
+
+/* BOOKS AND RECIPE PAGE */
+
+.page-hero {
+    padding: 25px 6% 55px;
+    background: linear-gradient(120deg,
+        #f0e7ff, #ffdee7, #e4f7ec, #e2f1ff);
+}
+
+.page-heading {
+    text-align: center;
+    padding: 65px 10px 15px;
+}
+
+.page-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 65px);
+    color: #393044;
+}
+
+.page-heading h1 span {
+    color: #927cce;
+}
+
+.page-heading > p:last-child {
+    color: #777083;
+    margin-top: 12px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    background: rgba(255,255,255,.7);
+    border: 1px solid white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(130,100,160,.09);
+    transition: .3s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(130,100,160,.16);
+}
+
+.book-cover {
+    width: 100%;
+    height: 290px;
+    object-fit: contain;
+    padding: 18px;
+    background: linear-gradient(135deg,#eee6ff,#ffe8ed);
+}
+
+.book-info {
+    padding: 22px;
+}
+
+.book-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 12px 0 5px;
+}
+
+.book-info p {
+    color: #777083;
+    font-size: 14px;
+}
+
+.book-info .author {
+    color: #917cc5;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.book-tag {
+    display: inline-block;
+    background: #eee6ff;
+    color: #8067bc;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.pink-tag {
+    background: #ffe4eb;
+    color: #c07891;
+}
+
+/* RECIPE */
+
+.recipe-card {
+    background: rgba(255,255,255,.7);
+    border: 1px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(130,100,160,.09);
+}
+
+.recipe-photo {
+    position: relative;
+    background: #f5eafa;
+}
+
+.recipe-photo img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-caption {
+    padding: 13px 20px;
+    color: #806caa;
+    font-size: 13px;
+    text-align: center;
+}
+
+.recipe-content {
+    padding: 25px 30px 10px;
+}
+
+.recipe-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+}
+
+.recipe-content p {
+    color: #777083;
+    font-size: 14px;
+}
+
+.recipe-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.recipe-details span {
+    background: #f0e9ff;
+    color: #8067bc;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.recipe-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 25px;
+    padding: 25px 30px 35px;
+}
+
+.recipe-list {
+    background: linear-gradient(140deg,#f1eaff,#fff0f3);
+    border-radius: 18px;
+    padding: 23px;
+}
+
+.steps-list {
+    background: linear-gradient(140deg,#e9f7f0,#eaf3ff);
+}
+
+.recipe-list h3 {
+    margin-bottom: 15px;
+    color: #65547e;
+}
+
+.recipe-list ul,
+.recipe-list ol {
+    padding-left: 22px;
+    color: #6d6878;
+    font-size: 14px;
+}
+
+.recipe-list li {
+    margin-bottom: 9px;
+}
+
+@media(max-width:650px) {
+    .recipe-columns {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .recipe-content {
+        padding: 22px;
+    }
+
+    .recipe-photo img {
+        height: 240px;
+    }
+
+    .book-cover {
+        height: 260px;
+    }
+
+    .page-heading {
+        padding-top: 45px;
+    }
+}
