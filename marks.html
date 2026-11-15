@@ -1,99 +1,199 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Marks Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Marks | Megha Patidar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>My Academic Marks</h1>
+<header class="page-hero">
+    <nav class="navbar">
+        <a class="logo" href="index.html">Megha<span>.</span></a>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="books-recipe.html">Books & Recipe</a> |
-        <a href="places.html">Favourite Places</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="timetable.html">Study Timetable</a> |
-        <a href="marks.html">Marks Table</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="books-recipe.html">Books & Recipe</a>
+            <a href="places.html">Places</a>
+            <a href="blog.html">Blog</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="marks.html">Marks</a>
+        </div>
     </nav>
-    <hr>
+
+    <div class="page-heading">
+        <p class="eyebrow">LEARNING • PROGRESS • ACHIEVEMENT</p>
+        <h1>My Academic <span>Journey</span> 🎓</h1>
+        <p>Every mark represents an effort and a step forward.</p>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <section>
-        <h2>Subject-wise Marks</h2>
+    <section class="section">
+        <p class="eyebrow">MY PERFORMANCE</p>
+        <h2>Academic Overview ✨</h2>
 
+        <div class="marks-summary">
+            <div class="marks-stat">
+                <span>Total Marks</span>
+                <h3>129 <small>/ 150</small></h3>
+            </div>
 
-        <table border="1">
+            <div class="marks-stat pink-stat">
+                <span>Percentage</span>
+                <h3>86<small>%</small></h3>
+            </div>
 
-            <caption>Academic Marks</caption>
+            <div class="marks-stat mint-stat">
+                <span>Subjects</span>
+                <h3>05</h3>
+            </div>
+        </div>
 
-            <thead>
-                <tr>
-                    <th scope="col">Subject</th>
-                    <th scope="col">Maximum Marks</th>
-                    <th scope="col">Marks Obtained</th>
-                    <th scope="col">Grade</th>
-                </tr>
-            </thead>
+        <div class="marks-card">
+            <div class="marks-heading">
+                <div>
+                    <span class="table-label">ACADEMIC RECORD</span>
+                    <h3>Subject-wise Performance</h3>
+                </div>
+                <span class="table-icon">🌸</span>
+            </div>
 
-            <tbody>
+            <div class="marks-table-scroll">
+                <table class="marks-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Maximum</th>
+                            <th>Obtained</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
 
-                <tr>
-                    <th scope="row">Physics</th>
-                    <td>30</td>
-                    <td>25</td>
-                    <td>A</td>
-                </tr>
+                    <tbody>
+                        <tr>
+                            <th>Physics</th>
+                            <td>30</td>
+                            <td>25</td>
+                            <td><span class="grade grade-a">A</span></td>
+                        </tr>
 
-                <tr>
-                    <th scope="row">Mathematics</th>
-                    <td>30</td>
-                    <td>28</td>
-                    <td>A+</td>
-                </tr>
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>30</td>
+                            <td>28</td>
+                            <td><span class="grade grade-aplus">A+</span></td>
+                        </tr>
 
-                <tr>
-                    <th scope="row">FOCSE</th>
-                    <td>30</td>
-                    <td>25</td>
-                    <td>A</td>
-                </tr>
+                        <tr>
+                            <th>FOCSE</th>
+                            <td>30</td>
+                            <td>25</td>
+                            <td><span class="grade grade-a">A</span></td>
+                        </tr>
 
-                <tr>
-                    <th scope="row">Civil Engineering</th>
-                    <td>30</td>
-                    <td>26</td>
-                    <td>A+</td>
-                </tr>
+                        <tr>
+                            <th>Civil Engineering</th>
+                            <td>30</td>
+                            <td>26</td>
+                            <td><span class="grade grade-aplus">A+</span></td>
+                        </tr>
 
-                <tr>
-                    <th scope="row">Mechanical Engineering</th>
-                    <td>30</td>
-                    <td>25</td>
-                    <td>A</td>
-                </tr>
+                        <tr>
+                            <th>Mechanical Engineering</th>
+                            <td>30</td>
+                            <td>25</td>
+                            <td><span class="grade grade-a">A</span></td>
+                        </tr>
+                    </tbody>
 
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <th scope="row">Total</th>
-                    <td>150</td>
-                    <td>129</td>
-                    <td>—</td>
-                </tr>
-            </tfoot>
-
-        </table>
-
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td>150</td>
+                            <td>129</td>
+                            <td>86%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
     </section>
+
+    <section class="section">
+        <p class="eyebrow">SUBJECT BREAKDOWN</p>
+        <h2>Performance Overview 📊</h2>
+
+        <div class="performance-card">
+
+            <div class="performance-item">
+                <div class="performance-label">
+                    <span>Physics</span>
+                    <strong>25/30</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill lavender-fill" style="width:83.33%"></div>
+                </div>
+            </div>
+
+            <div class="performance-item">
+                <div class="performance-label">
+                    <span>Mathematics</span>
+                    <strong>28/30</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill pink-fill" style="width:93.33%"></div>
+                </div>
+            </div>
+
+            <div class="performance-item">
+                <div class="performance-label">
+                    <span>FOCSE</span>
+                    <strong>25/30</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill mint-fill" style="width:83.33%"></div>
+                </div>
+            </div>
+
+            <div class="performance-item">
+                <div class="performance-label">
+                    <span>Civil Engineering</span>
+                    <strong>26/30</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill blue-fill" style="width:86.67%"></div>
+                </div>
+            </div>
+
+            <div class="performance-item">
+                <div class="performance-label">
+                    <span>Mechanical Engineering</span>
+                    <strong>25/30</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill peach-fill" style="width:83.33%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="travel-note">
+        <p class="eyebrow">KEEP GROWING</p>
+        <h2>Progress is better than perfection. ♡</h2>
+        <p>Keep learning, keep improving, and keep believing in yourself.</p>
+    </div>
 
 </main>
 
 <footer>
-    <hr>
-    <p>&copy; 2026 Megha Patidar</p>
+    <p>© 2026 Megha Patidar</p>
+    <p>Learning today, achieving tomorrow ♡</p>
 </footer>
 
 </body>
