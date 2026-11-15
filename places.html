@@ -1,70 +1,120 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Favourite Places</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Places | Megha Patidar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>My Favourite Places</h1>
+<header class="page-hero">
+    <nav class="navbar">
+        <a class="logo" href="index.html">Megha<span>.</span></a>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="books-recipe.html">Books & Recipe</a> |
-        <a href="places.html">Favourite Places</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="timetable.html">Study Timetable</a> |
-        <a href="marks.html">Marks Table</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="books-recipe.html">Books & Recipe</a>
+            <a href="places.html">Places</a>
+            <a href="blog.html">Blog</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="marks.html">Marks</a>
+        </div>
     </nav>
-    <hr>
+
+    <div class="page-heading">
+        <p class="eyebrow">EXPLORE • DISCOVER • EXPERIENCE</p>
+        <h1>Places I <span>Love</span> 🌸</h1>
+        <p>Beautiful destinations, unforgettable memories and peaceful moments.</p>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <section>
-        <h2>Places I Love</h2>
+    <section class="section">
+        <p class="eyebrow">MY TRAVEL DIARY</p>
+        <h2>Favourite Destinations ✨</h2>
 
-        <p>Exploring new places is one of my favourite activities. I love destinations that offer natural beauty, peace, and memorable experiences.</p>
-         <figure>
-            <img src="bee_fall.jpeg"
-                 alt="PANCHMARI"
-                 width="200">
+        <p>
+            Exploring new places is one of my favourite activities.
+            I love destinations that offer natural beauty, peace,
+            and memorable experiences.
+        </p>
 
-            <figcaption>
-                <h3>Pachmarhi, Madhya Pradesh</h3>
-                Pachmarhi is a beautiful hill station known for its greenery, waterfalls, and peaceful environment.
-            </figcaption>
-        </figure>
-        <hr> <hr>
+        <div class="places-grid">
 
-        <figure>
-            <img src="sailani.jpg"
-                 alt="Sailani Island"
-                 width="200">
+            <article class="place-card">
+                <div class="place-image">
+                    <img src="bee_fall.jpeg" alt="Pachmarhi">
+                    <span class="place-number">01</span>
+                </div>
 
-            <figcaption>
-                <h3>Sailani Island , Madhya Pradesh</h3>
-                Sailani Island is a beautiful tourist destination located on the backwaters of Narmada river , famous for its scenic natural beauty , boating and peaceful surroundings .
-            </figcaption>
-        </figure>
- <hr> <hr>
-        <figure>
-            <img src="maheshwar.jpg"
-                 alt="Maheshwar"
-                 width="200">
+                <div class="place-info">
+                    <span class="place-tag">🌿 Nature & Waterfalls</span>
+                    <h3>Pachmarhi</h3>
+                    <p class="place-location">Madhya Pradesh, India</p>
+                    <p>
+                        Pachmarhi is a beautiful hill station known
+                        for its greenery, waterfalls, and peaceful
+                        environment.
+                    </p>
+                </div>
+            </article>
 
-            <figcaption>
-                <h3>Maheshwar, Madhya Pradesh</h3>
-                Maheshwar is a historic town situated on the banks of Narmada river , it is famous for beautiful forts , ancient temples , ghats , and traditional Maheshwari sarees.
-            </figcaption>
-        </figure>
+            <article class="place-card">
+                <div class="place-image">
+                    <img src="sailani.jpg" alt="Sailani Island">
+                    <span class="place-number">02</span>
+                </div>
 
+                <div class="place-info">
+                    <span class="place-tag pink-place-tag">🚤 Peace & Boating</span>
+                    <h3>Sailani Island</h3>
+                    <p class="place-location">Madhya Pradesh, India</p>
+                    <p>
+                        Sailani Island is a beautiful tourist destination
+                        located on the backwaters of Narmada river,
+                        famous for its scenic natural beauty, boating
+                        and peaceful surroundings.
+                    </p>
+                </div>
+            </article>
+
+            <article class="place-card">
+                <div class="place-image">
+                    <img src="maheshwar.jpg" alt="Maheshwar">
+                    <span class="place-number">03</span>
+                </div>
+
+                <div class="place-info">
+                    <span class="place-tag mint-place-tag">🏛️ Heritage & Culture</span>
+                    <h3>Maheshwar</h3>
+                    <p class="place-location">Madhya Pradesh, India</p>
+                    <p>
+                        Maheshwar is a historic town situated on the
+                        banks of Narmada river. It is famous for
+                        beautiful forts, ancient temples, ghats,
+                        and traditional Maheshwari sarees.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="travel-note">
+        <p class="eyebrow">LITTLE REMINDER</p>
+        <h2>Collect moments, not just places. ♡</h2>
+        <p>Every destination has a story waiting to be discovered.</p>
     </section>
 
 </main>
 
 <footer>
-    <hr>
-    <p>&copy; 2026 Megha Patidar</p>
+    <p>© 2026 Megha Patidar</p>
+    <p>Exploring the world, one memory at a time ♡</p>
 </footer>
 
 </body>
